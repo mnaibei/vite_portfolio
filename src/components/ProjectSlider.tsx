@@ -155,7 +155,7 @@ const ProjectSlider: React.FC = () => {
             {projectsData.map((project, index: number) => (
               <article
                 key={index}
-                className="bg-darkblue flex flex-col gap-10 w-[80%] h-full  border-lightblue border-[0.4rem] p-8 rounded-xl mb-10 min-[1024px]:hidden max-lg:w-[90%]">
+                className="bg-darkblue flex flex-col gap-10 w-[80%] h-full  border-lightblue border-[0.4rem] p-8 rounded-xl mb-10 min-[1024px]:hidden max-lg:w-[90%] md:w-1/2">
                 <h2 className="text-white">{project.title}</h2>
                 <img
                   src={project.image}

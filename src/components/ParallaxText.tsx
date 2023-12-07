@@ -88,8 +88,7 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
     <div className=" overflow-hidden whitespace-nowrap flex flex-nowrap m-0">
       <motion.div
         className="font-semibold text-9xl flex whitespace-nowrap flex-nowrap"
-        style={{ x }}
-      >
+        style={{ x }}>
         {isMobileMenuActive ? (
           <>
             <p className="block mr-12 text-black">{children}</p>
@@ -131,8 +130,7 @@ export default function LiveTicker() {
           <Link
             to={sideBarLeftSocials[1].link}
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             <span className="text-[--orange]">&lt;</span>
             {language === "DE"
               ? liveTickerData.content.de

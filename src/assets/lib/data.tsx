@@ -12,7 +12,8 @@ import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
-import figmaicon from "../../assets/icons/figmaicon.svg";
+import githubicon from "../../assets/icons/github.svg";
+import githubwhiteicon from "../../assets/icons/githubwhite.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import ctracker from "../../assets/img/ctracker.webp";
@@ -20,6 +21,16 @@ import todos from "../../assets/img/todos.webp";
 import cinema from "../../assets/img/cinema.webp";
 import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
+import giticon from "../../assets/icons/git-icon.svg";
+import boostrap from "../../assets/icons/bootstrap.svg";
+import capybara from "../../assets/icons/capybara.svg";
+import gems from "../../assets/icons/gems.svg";
+import jest from "../../assets/icons/jest.svg";
+import postgres from "../../assets/icons/postgres.svg";
+import ruby from "../../assets/icons/ruby.svg";
+import rspec from "../../assets/icons/rspec.svg";
+import ror from "../../assets/icons/ror.svg";
+import webpack from "../../assets/icons/webpack.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
@@ -183,10 +194,10 @@ export const skillsDataWeb = [
         color: "#61DAFB",
       },
       {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
-        color: ["#000000", "#FFFFFF"],
+        title: "Ruby",
+        hash: "#Ruby",
+        icon: [ruby],
+        color: ["#808080"],
       },
       {
         title: "Node.js",
@@ -201,15 +212,21 @@ export const skillsDataWeb = [
         color: "#38B2AC",
       },
       {
+        title: "Bootstrap",
+        hash: "#Bootstrap",
+        icon: boostrap,
+        color: "#CC6609",
+      },
+      {
         title: "MongoDB",
         hash: "#MongoDB",
         icon: mongodbicon,
         color: "#449C45",
       },
       {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
+        title: "Postgres",
+        hash: "#Postgres",
+        icon: postgres,
         color: "#4FC08D",
       },
       {
@@ -219,53 +236,60 @@ export const skillsDataWeb = [
         color: ["#000000", "#FFFFFF"],
       },
       {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
+        title: "Rails",
+        hash: "#Rails",
+        icon: ror,
         color: "#CC6699",
+      },
+      {
+        title: "Gems",
+        hash: "#Gems",
+        icon: gems,
+        color: "#AC5699",
       },
     ],
   },
 ] as const;
 
-export const skillsDataDesign = [
+export const skillsDataTools = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Tools",
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-      // {
-      //   title: "Adobe XD",
-      //   hash: "#Adobe XD",
-      //   icon: adobexdicon,
-      //   color: "#FF61F6",
-      // },
-      // { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+      { title: "Git", hash: "#Git", icon: giticon, color: "#F24E1E" },
+      {
+        title: "Github",
+        hash: "#Github",
+        icon: [githubicon],
+        color: ["#FF61F6"],
+      },
+      { title: "Render", hash: "#Render", icon: rendericon, color: "#00C4CC" },
+      { title: "Webpack", hash: "#Webpack", icon: webpack, color: "#01C4CC" },
     ],
   },
 ] as const;
 
 export const skillsDataCMS = [
   {
-    skillsTitle: "CMS",
+    skillsTitle: "Testing",
     skills: [
       {
-        title: "WordPress",
-        hash: "#WordPress",
-        icon: wordpressicon,
+        title: "Jest",
+        hash: "#Jest",
+        icon: jest,
         color: "#21759B",
       },
-      // {
-      //   title: "Shopify",
-      //   hash: "#Shopify",
-      //   icon: shopifyicon,
-      //   color: "#7AB55C",
-      // },
-      // {
-      //   title: "Webflow",
-      //   hash: "#Webflow",
-      //   icon: webflowicon,
-      //   color: "#4353FF",
-      // },
+      {
+        title: "Rspec",
+        hash: "#Rspec",
+        icon: rspec,
+        color: "#7AB55C",
+      },
+      {
+        title: "Capybara",
+        hash: "#Capybara",
+        icon: capybara,
+        color: "#4353FF",
+      },
     ],
   },
 ] as const;

@@ -3,7 +3,7 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
 import {
   skillsDataCMS,
-  skillsDataDesign,
+  skillsDataTools,
   skillsDataWeb,
 } from "../assets/lib/data";
 import { useTheme } from "../context/theme-context";
@@ -28,8 +28,7 @@ const TechStack: React.FC = () => {
       <section
         className="relative tech-stack max-lg:p-16 "
         id="skills"
-        ref={ref}
-      >
+        ref={ref}>
         <RadialGradient
           scale="scale-y-[3]"
           opacity={theme === "light" ? "opacity-30" : "opacity-30"}
@@ -41,8 +40,7 @@ const TechStack: React.FC = () => {
             style={{
               scale: scaleProgess,
               opacity: opacityProgess,
-            }}
-          >
+            }}>
             <p className="font-black mb-6">
               <span className="text-[--orange]">&lt;</span>Skills
               <span className="text-[--orange]">/&gt;</span>
@@ -59,7 +57,7 @@ const TechStack: React.FC = () => {
             <SkillSection skillsData={skillsDataWeb} theme={theme} />
           </div>
           <div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">
-            <SkillSection skillsData={skillsDataDesign} theme={theme} />
+            <SkillSection skillsData={skillsDataTools} theme={theme} />
             <SkillSection skillsData={skillsDataCMS} theme={theme} />
           </div>
         </div>

@@ -38,8 +38,7 @@ const ProjectSlider: React.FC = () => {
       <section
         className=" skill-banner relative overflow-x-clip h-100% w-full flex flex-col gap-2 "
         id="projects"
-        ref={ref}
-      >
+        ref={ref}>
         <ToastContainer
           className="w-max text-3xl block p-3 "
           position="bottom-center"
@@ -60,8 +59,7 @@ const ProjectSlider: React.FC = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-          }}
-        >
+          }}>
           <div className="title-container flex flex-col gap-6 mb-24 rotate-3 justify-between items-center max-lg:w-[100vw]">
             <motion.div
               ref={animationReference}
@@ -69,8 +67,7 @@ const ProjectSlider: React.FC = () => {
                 scale: scaleProgess,
                 opacity: opacityProgess,
                 textAlign: "center",
-              }}
-            >
+              }}>
               <p className="text-[--white] mt-16 mb-6">
                 <span className="text-[--orange]">&lt;</span>
                 {language === "DE" ? "Projekte" : "Projects"}
@@ -93,13 +90,11 @@ const ProjectSlider: React.FC = () => {
               }}
               pagination={{
                 clickable: true,
-              }}
-            >
+              }}>
               {projectsData.map((project, index: number) => (
                 <SwiperSlide
                   key={index}
-                  className="quote-outer-container bg-[--darkblue] text-[--white] flex flex-row justify-between  rounded-2xl p-20 text-left max-lg:hidden "
-                >
+                  className="quote-outer-container bg-[--darkblue] text-[--white] flex flex-row justify-between  rounded-2xl p-20 text-left max-lg:hidden ">
                   <div className=" w-[55%] flex flex-col gap-12 justify-between ">
                     <h2>{project.title}</h2>
 
@@ -160,8 +155,7 @@ const ProjectSlider: React.FC = () => {
             {projectsData.map((project, index: number) => (
               <article
                 key={index}
-                className="bg-darkblue flex flex-col gap-10 w-[80%] h-full  border-lightblue border-[0.4rem] p-8 rounded-xl mb-10 min-[1024px]:hidden max-lg:w-[90%]"
-              >
+                className="bg-darkblue flex flex-col gap-10 w-[80%] h-full  border-lightblue border-[0.4rem] p-8 rounded-xl mb-10 min-[1024px]:hidden max-lg:w-[90%] md:w-1/2">
                 <h2 className="text-white">{project.title}</h2>
                 <img
                   src={project.image}

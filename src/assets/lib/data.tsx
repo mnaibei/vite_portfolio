@@ -1,34 +1,33 @@
-import adobexdicon from "../../assets/icons/adobexdicon.svg";
-import canvaicon from "../../assets/icons/canvaicon.svg";
-import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
-import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
-import vuejsicon from "../../assets/icons/vueicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
-import sassscssicon from "../../assets/icons/sassicon.svg";
-import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
+import githubicon from "../../assets/icons/github.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
-import wordpressicon from "../../assets/icons/wordpressicon.svg";
-import shopifyicon from "../../assets/icons/shopifyicon.svg";
-import webflowicon from "../../assets/icons/webflowicon.svg";
 import ctracker from "../../assets/img/ctracker.webp";
-import instorMockup from "../../assets/img/instor_mockup.webp";
-import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import todos from "../../assets/img/todos.webp";
+import cinema from "../../assets/img/cinema.webp";
 import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
+import giticon from "../../assets/icons/git-icon.svg";
+import boostrap from "../../assets/icons/bootstrap.svg";
+import capybara from "../../assets/icons/capybara.svg";
+import gems from "../../assets/icons/gems.svg";
+import jest from "../../assets/icons/jest.svg";
+import postgres from "../../assets/icons/postgres.svg";
+import ruby from "../../assets/icons/ruby.svg";
+import rspec from "../../assets/icons/rspec.svg";
+import ror from "../../assets/icons/ror.svg";
+import webpack from "../../assets/icons/webpack.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
-import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
@@ -37,8 +36,8 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Mucha Naibei",
-    en: "Hi, I'm Mucha Naibei",
+    de: "Hi, ich bin Mucha",
+    en: "Hi, I'm Mucha",
   },
   subtitle: "Fullstack Developer ",
   description: {
@@ -70,7 +69,7 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Cryptocurrency Web App",
+    title: "Cryptocurrency App",
     description:
       "Die mobile Web-App „Cryptocurrency Tracker“ ist ein leistungsstarkes Tool, das mit React und Redux erstellt wurde und asynchrone Thunk-Middleware nutzt, um Echtzeitdaten von einer Kryptowährungs-API abzurufen. Mit dieser App können Benutzer über die neuesten Trends auf dem Kryptowährungsmarkt informiert bleiben. Die App bietet aktuelle Kennzahlen für verschiedene Kryptowährungen, einschließlich ihrer aktuellen Werte und prozentualen Änderungen in den letzten 1 Stunde, 24 Stunden und 7 Tagen. Durch die Verwendung von Redux für die Statusverwaltung gewährleistet die App eine nahtlose Datensynchronisierung und ermöglicht Benutzern die gleichzeitige Verfolgung mehrerer Kryptowährungen. Die benutzerfreundliche Oberfläche bietet ein intuitives Erlebnis und erleichtert die Navigation durch verschiedene Münzen und den Zugriff auf detaillierte Informationen.",
     description_EN:
@@ -81,6 +80,7 @@ export const projectsData = [
       { name: "JavaScript", icon: javascripticon },
       { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
+      { name: "Render", icon: rendericon },
     ],
     image: ctracker,
     deploymenturl: "https://cryptotracker-1qgb.onrender.com",
@@ -95,7 +95,7 @@ export const projectsData = [
     },
   },
   {
-    title: "Todo List Web App",
+    title: "Todo List App",
     description:
       "Die Todo List Web App ist ein elegantes und effizientes Aufgabenverwaltungstool, das mit React erstellt wurde. Es ermöglicht Benutzern das nahtlose Hinzufügen, Bearbeiten und Entfernen von Aufgaben und bietet eine optimierte Benutzeroberfläche für die Organisation täglicher Aufgabenlisten. Die App nutzt lokalen Speicher, um die Datenpersistenz sicherzustellen und Aufgaben auch dann beizubehalten, wenn die Seite aktualisiert oder der Browser geschlossen wird. Mit ihrem benutzerfreundlichen Design und den wesentlichen Funktionen ermöglicht die Todo List Web App Benutzern, organisiert zu bleiben, Aufgaben zu priorisieren und die Produktivität zu steigern.",
     description_EN:
@@ -105,8 +105,9 @@ export const projectsData = [
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
+      { name: "Render", icon: rendericon },
     ],
-    image: silentmoonMockup,
+    image: todos,
     deploymenturl: "https://todo-list-app-457c.onrender.com",
     githuburl: "https://github.com/mnaibei/todo-list-react",
     githubicon: FiGithub,
@@ -119,28 +120,21 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "CinemaHub App",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "Ich habe eine fesselnde Single-Page-Website entwickelt. Es verwendet HTML, CSS und JavaScript, um Filmdaten von der OMDB-API abzurufen und sie dynamisch zu rendern. Ziel war es, ein nahtloses Benutzererlebnis mit einem optisch ansprechenden, responsiven Design zu schaffen. JavaScript ermöglicht den dynamischen Datenabruf und interaktive Funktionen und sorgt so für ein reibungsloses Surferlebnis ohne Neuladen der Seite.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "I developed a captivating single-page website. It uses HTML, CSS, and JavaScript to fetch movie data from the OMDB API and dynamically renders it. The goal was to create a seamless user experience with a visually appealing, responsive design. JavaScript enables dynamic data fetching and interactive features, providing a smooth browsing experience without page reloads.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
       { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
     ],
-    image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    image: cinema,
+    deploymenturl: "https://mnaibei.github.io/cinemaHub/dist/#home",
+    githuburl: "https://github.com/mnaibei/cinemaHub",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -194,10 +188,10 @@ export const skillsDataWeb = [
         color: "#61DAFB",
       },
       {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
-        color: ["#000000", "#FFFFFF"],
+        title: "Ruby",
+        hash: "#Ruby",
+        icon: [ruby],
+        color: ["#808080"],
       },
       {
         title: "Node.js",
@@ -212,15 +206,21 @@ export const skillsDataWeb = [
         color: "#38B2AC",
       },
       {
+        title: "Bootstrap",
+        hash: "#Bootstrap",
+        icon: boostrap,
+        color: "#CC6609",
+      },
+      {
         title: "MongoDB",
         hash: "#MongoDB",
         icon: mongodbicon,
         color: "#449C45",
       },
       {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
+        title: "Postgres",
+        hash: "#Postgres",
+        icon: postgres,
         color: "#4FC08D",
       },
       {
@@ -230,51 +230,58 @@ export const skillsDataWeb = [
         color: ["#000000", "#FFFFFF"],
       },
       {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
+        title: "Rails",
+        hash: "#Rails",
+        icon: ror,
         color: "#CC6699",
+      },
+      {
+        title: "Gems",
+        hash: "#Gems",
+        icon: gems,
+        color: "#AC5699",
       },
     ],
   },
 ] as const;
 
-export const skillsDataDesign = [
+export const skillsDataTools = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Tools",
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
+      { title: "Git", hash: "#Git", icon: giticon, color: "#F24E1E" },
       {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
-        color: "#FF61F6",
+        title: "Github",
+        hash: "#Github",
+        icon: [githubicon],
+        color: ["#FF61F6"],
       },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+      { title: "Render", hash: "#Render", icon: rendericon, color: "#00C4CC" },
+      { title: "Webpack", hash: "#Webpack", icon: webpack, color: "#01C4CC" },
     ],
   },
 ] as const;
 
 export const skillsDataCMS = [
   {
-    skillsTitle: "CMS",
+    skillsTitle: "Testing",
     skills: [
       {
-        title: "WordPress",
-        hash: "#WordPress",
-        icon: wordpressicon,
+        title: "Jest",
+        hash: "#Jest",
+        icon: jest,
         color: "#21759B",
       },
       {
-        title: "Shopify",
-        hash: "#Shopify",
-        icon: shopifyicon,
+        title: "Rspec",
+        hash: "#Rspec",
+        icon: rspec,
         color: "#7AB55C",
       },
       {
-        title: "Webflow",
-        hash: "#Webflow",
-        icon: webflowicon,
+        title: "Capybara",
+        hash: "#Capybara",
+        icon: capybara,
         color: "#4353FF",
       },
     ],
@@ -295,23 +302,23 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:muchajulius@gmail.com",
+  text: "muchajulius@.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/mucha-julius/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/mnaibei",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:muchajulius@gmail.com",
     icon: FiMail,
     altimgname: "mail",
   },

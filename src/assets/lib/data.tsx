@@ -1,3 +1,6 @@
+import adobexdicon from "../../assets/icons/adobexdicon.svg";
+import canvaicon from "../../assets/icons/canvaicon.svg";
+import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
@@ -10,12 +13,19 @@ import mongodbicon from "../../assets/icons/mongoicon.svg";
 import vuejsicon from "../../assets/icons/vueicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
+import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
+import spotifyicon from "../../assets/icons/spotifyicon.svg";
+import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
-import ctracker from "../../assets/img/ctracker.webp";
-import todos from "../../assets/img/todos.webp";
-import cinema from "../../assets/img/cinema.webp";
+import jwticon from "../../assets/icons/jwticon.svg";
+import wordpressicon from "../../assets/icons/wordpressicon.svg";
+import shopifyicon from "../../assets/icons/shopifyicon.svg";
+import webflowicon from "../../assets/icons/webflowicon.svg";
+import tastyMockup from "../../assets/img/tasty_mockup.webp";
+import instorMockup from "../../assets/img/instor_mockup.webp";
+import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -29,13 +39,13 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Mucha",
-    en: "Hi, I'm Mucha",
+    de: "Hi, ich bin Alpay",
+    en: "Hi, I'm Alpay",
   },
   subtitle: "Fullstack Developer ",
   description: {
-    de: "Hallo, ich bin Mucha Naibei, ein IT-Spezialist/Berater mit über sechs Jahren Erfahrung. Es liegt mir am Herzen, die IT-Sicherheit zu verbessern, modernste Technologien zu implementieren und erstklassige Lösungen bereitzustellen. Über die IT hinaus bin ich ein erfahrener Softwareentwickler, der sich dem kontinuierlichen Lernen widmet und über Branchentrends auf dem Laufenden bleibt. Ich gedeihe in schnelllebigen Umgebungen, löse Herausforderungen und übertreffe die Erwartungen meiner Kunden. Ich bringe Problemlösungskompetenz, effektives Zeitmanagement und Teamarbeit in jedes Projekt ein.",
-    en: "Hello, I am Mucha Naibei, an IT Specialist/Consultant with over six years of experience. I am passionate about enhancing IT security, implementing cutting-edge technologies, and delivering top-notch solutions. Beyond IT, I am a skilled software engineer dedicated to continuous learning and staying updated with industry trends. I thrive in fast-paced environments, solving challenges, and exceeding customer expectations. I bring problem-solving prowess, effective time management, and teamwork to every project.",
+    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
+    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
@@ -62,22 +72,25 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Cryptocurrency App",
+    title: "Tasty App",
     description:
-      "Die mobile Web-App „Cryptocurrency Tracker“ ist ein leistungsstarkes Tool, das mit React und Redux erstellt wurde und asynchrone Thunk-Middleware nutzt, um Echtzeitdaten von einer Kryptowährungs-API abzurufen. Mit dieser App können Benutzer über die neuesten Trends auf dem Kryptowährungsmarkt informiert bleiben. Die App bietet aktuelle Kennzahlen für verschiedene Kryptowährungen, einschließlich ihrer aktuellen Werte und prozentualen Änderungen in den letzten 1 Stunde, 24 Stunden und 7 Tagen. Durch die Verwendung von Redux für die Statusverwaltung gewährleistet die App eine nahtlose Datensynchronisierung und ermöglicht Benutzern die gleichzeitige Verfolgung mehrerer Kryptowährungen. Die benutzerfreundliche Oberfläche bietet ein intuitives Erlebnis und erleichtert die Navigation durch verschiedene Münzen und den Zugriff auf detaillierte Informationen.",
+      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
     description_EN:
-      "The Cryptocurrency Tracker mobile web app is a powerful tool built with React and Redux, leveraging async thunk middleware to retrieve real-time data from a cryptocurrency API. With this app, users can stay informed about the latest trends in the cryptocurrency market. The app provides up-to-date metrics for various cryptocurrencies, including their current values and percentage changes over the past 1 hour, 24 hours, and 7 days. By utilizing Redux for state management, the app ensures seamless data synchronization and allows users to track multiple cryptocurrencies simultaneously. The user-friendly interface provides an intuitive experience, making it easy to navigate through different coins and access detailed information.",
+      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
-      { name: "Render", icon: rendericon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Canva", icon: canvaicon },
+      { name: "Netlify", icon: netlifyicon },
+      { name: "Trello", icon: trelloicon },
     ],
-    image: ctracker,
-    deploymenturl: "https://cryptotracker-1qgb.onrender.com",
-    githuburl: "https://github.com/mnaibei/react-capstone",
+    image: tastyMockup,
+    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
+    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -88,21 +101,29 @@ export const projectsData = [
     },
   },
   {
-    title: "Todo List App",
+    title: "Silentmoon",
     description:
-      "Die Todo List Web App ist ein elegantes und effizientes Aufgabenverwaltungstool, das mit React erstellt wurde. Es ermöglicht Benutzern das nahtlose Hinzufügen, Bearbeiten und Entfernen von Aufgaben und bietet eine optimierte Benutzeroberfläche für die Organisation täglicher Aufgabenlisten. Die App nutzt lokalen Speicher, um die Datenpersistenz sicherzustellen und Aufgaben auch dann beizubehalten, wenn die Seite aktualisiert oder der Browser geschlossen wird. Mit ihrem benutzerfreundlichen Design und den wesentlichen Funktionen ermöglicht die Todo List Web App Benutzern, organisiert zu bleiben, Aufgaben zu priorisieren und die Produktivität zu steigern.",
+      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
     description_EN:
-      "The Todo List Web App is a sleek and efficient task management tool built with React. It enables users to seamlessly add, edit, and remove tasks, providing a streamlined interface for organizing daily to-do lists. The app leverages local storage to ensure data persistence, preserving tasks even when the page is refreshed or the browser is closed. With its user-friendly design and essential features, the Todo List Web App empowers users to stay organized, prioritize tasks, and enhance productivity.",
+      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
+      { name: "Spotify Api", icon: spotifyicon },
       { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
       { name: "Render", icon: rendericon },
     ],
-    image: todos,
-    deploymenturl: "https://todo-list-app-457c.onrender.com",
-    githuburl: "https://github.com/mnaibei/todo-list-react",
+    image: silentmoonMockup,
+    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    githuburl:
+      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -113,21 +134,28 @@ export const projectsData = [
     },
   },
   {
-    title: "CinemaHub App",
+    title: "Furniture Organizer",
     description:
-      "Ich habe eine fesselnde Single-Page-Website entwickelt. Es verwendet HTML, CSS und JavaScript, um Filmdaten von der OMDB-API abzurufen und sie dynamisch zu rendern. Ziel war es, ein nahtloses Benutzererlebnis mit einem optisch ansprechenden, responsiven Design zu schaffen. JavaScript ermöglicht den dynamischen Datenabruf und interaktive Funktionen und sorgt so für ein reibungsloses Surferlebnis ohne Neuladen der Seite.",
+      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
     description_EN:
-      "I developed a captivating single-page website. It uses HTML, CSS, and JavaScript to fetch movie data from the OMDB API and dynamically renders it. The goal was to create a seamless user experience with a visually appealing, responsive design. JavaScript enables dynamic data fetching and interactive features, providing a smooth browsing experience without page reloads.",
+      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
       { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
     ],
-    image: cinema,
-    deploymenturl: "https://mnaibei.github.io/cinemaHub/dist/#home",
-    githuburl: "https://github.com/mnaibei/cinemaHub",
+    image: instorMockup,
+    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
+    githuburl: "https://github.com/AlpayC/Furniture_MERN",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -226,47 +254,47 @@ export const skillsDataWeb = [
   },
 ] as const;
 
-// export const skillsDataDesign = [
-//   {
-//     skillsTitle: "Design",
-//     skills: [
-//       { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-//       // {
-//       //   title: "Adobe XD",
-//       //   hash: "#Adobe XD",
-//       //   icon: adobexdicon,
-//       //   color: "#FF61F6",
-//       // },
-//       // { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
-//     ],
-//   },
-// ] as const;
+export const skillsDataDesign = [
+  {
+    skillsTitle: "Design",
+    skills: [
+      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
+      {
+        title: "Adobe XD",
+        hash: "#Adobe XD",
+        icon: adobexdicon,
+        color: "#FF61F6",
+      },
+      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+    ],
+  },
+] as const;
 
-// export const skillsDataCMS = [
-//   {
-//     skillsTitle: "CMS",
-//     skills: [
-//       {
-//         title: "WordPress",
-//         hash: "#WordPress",
-//         icon: wordpressicon,
-//         color: "#21759B",
-//       },
-//       // {
-//       //   title: "Shopify",
-//       //   hash: "#Shopify",
-//       //   icon: shopifyicon,
-//       //   color: "#7AB55C",
-//       // },
-//       // {
-//       //   title: "Webflow",
-//       //   hash: "#Webflow",
-//       //   icon: webflowicon,
-//       //   color: "#4353FF",
-//       // },
-//     ],
-//   },
-// ] as const;
+export const skillsDataCMS = [
+  {
+    skillsTitle: "CMS",
+    skills: [
+      {
+        title: "WordPress",
+        hash: "#WordPress",
+        icon: wordpressicon,
+        color: "#21759B",
+      },
+      {
+        title: "Shopify",
+        hash: "#Shopify",
+        icon: shopifyicon,
+        color: "#7AB55C",
+      },
+      {
+        title: "Webflow",
+        hash: "#Webflow",
+        icon: webflowicon,
+        color: "#4353FF",
+      },
+    ],
+  },
+] as const;
 
 export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
@@ -282,23 +310,23 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:muchajulius@gmail.com",
-  text: "muchajulius@.com",
+  link: "mailto:myemail@com",
+  text: "myemail@com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/mucha-julius/",
+    link: "https://www.linkedin.com/in/alpay/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/mnaibei",
+    link: "https://github.com/AlpayC",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:muchajulius@gmail.com",
+    link: "mailto:myemail@com",
     icon: FiMail,
     altimgname: "mail",
   },

@@ -303,7 +303,7 @@ export const FooterLinks = [
 
 export const sideBarRightMail = {
   link: "mailto:muchajulius@gmail.com",
-  text: "muchajulius@.com",
+  text: "muchajulius@gmail.com",
 } as const;
 
 export const sideBarLeftSocials = [

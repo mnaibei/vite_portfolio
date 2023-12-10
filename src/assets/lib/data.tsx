@@ -26,6 +26,9 @@ import ruby from "../../assets/icons/ruby.svg";
 import rspec from "../../assets/icons/rspec.svg";
 import ror from "../../assets/icons/ror.svg";
 import webpack from "../../assets/icons/webpack.svg";
+import redux from "../../assets/icons/redux.svg";
+import rubocop from "../../assets/icons/rubocop.svg";
+import eslint from "../../assets/icons/eslint.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
@@ -188,6 +191,12 @@ export const skillsDataWeb = [
         color: "#61DAFB",
       },
       {
+        title: "Redux",
+        hash: "#Redux",
+        icon: redux,
+        color: "#BB5699",
+      },
+      {
         title: "Ruby",
         hash: "#Ruby",
         icon: [ruby],
@@ -258,6 +267,8 @@ export const skillsDataTools = [
       },
       { title: "Render", hash: "#Render", icon: rendericon, color: "#00C4CC" },
       { title: "Webpack", hash: "#Webpack", icon: webpack, color: "#01C4CC" },
+      { title: "Rubocop", hash: "#Rubocop", icon: rubocop, color: "#D1C4CC" },
+      { title: "Eslint", hash: "#Eslint", icon: eslint, color: "#F1C4CC" },
     ],
   },
 ] as const;

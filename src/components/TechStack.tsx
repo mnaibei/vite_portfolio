@@ -56,7 +56,7 @@ const TechStack: React.FC = () => {
           <div className="w-1/3 max-lg:w-full">
             <SkillSection skillsData={skillsDataWeb} theme={theme} />
           </div>
-          <div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">
+          <div className="safari flex flex-col h-[inherit]  justify-around md:w-1/2 max-lg:gap-40">
             <SkillSection skillsData={skillsDataTools} theme={theme} />
             <SkillSection skillsData={skillsDataCMS} theme={theme} />
           </div>

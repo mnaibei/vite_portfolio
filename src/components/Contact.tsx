@@ -147,7 +147,8 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
   return (
     <React.Fragment>
       <section
-        className="contact-container w-full min-[1921px]:px-[55rem] mt-16"
+        //removing min-[1921px]:px-[55rem]
+        className="contact-container w-full mt-16"
         id="contact">
         <div
           className="title-container flex flex-col gap-6 justify-center items-center py-16  max-lg:p-16"
@@ -172,7 +173,8 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             </h2>
           </motion.div>
         </div>
-        <div className="flex flex-row justify-center items-start px-32 pt-32 mb-32 max-lg:flex-col max-lg:p-10">
+        {/* added border and w-screen  */}
+        <div className="flex flex-row justify-center items-start px-32 pt-32 mb-32 max-lg:flex-col max-lg:p-10 border-4 border-red-500 w-screen">
           <div className="w-1/2  bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all  quote-outer-container text-left max-lg:hidden cursor-progress overflow-x-hidden">
             <Highlight
               code={codeSnippet}

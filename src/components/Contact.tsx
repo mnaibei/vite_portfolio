@@ -11,7 +11,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
+  const apiBaseUrl = "https://formspree.io/xwkdbqla";
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");

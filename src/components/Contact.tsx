@@ -144,51 +144,21 @@ Wishing you stardust dreams,\n
 ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 \``;
 
-  //   const codeSnippet2 = `
-  // // 🚀 Initiating Quantum Email Transmission 🪐
-  // const launchEmail = async () => {
-  //   try {
-  //     const response = await fetch('https://alpaycelik.dev/send',{
-  //     method: 'POST',
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: JSON.stringify({
-  //      sender,
-  //      recipient,
-  //      subject,
-  //      message
-  //     })
-  //    });
-
-  //    if (response.ok) {
-  //    console.log('🌌 Transmission successful!');
-  //    } else {
-  //    console.error('🌠 Cosmic glitch encountered...');
-  //    }
-  //   } catch (error) {
-  //   console.error('🌪 Quantum disturbance detected:', error);
-  //   }
-  // };
-  // // 🚀 Ready for Liftoff? 🛸
-  // launchEmail();`;
-
   return (
     <React.Fragment>
       <section
         className="contact-container w-full min-[1921px]:px-[55rem] mt-16"
-        id="contact"
-      >
+        id="contact">
         <div
           className="title-container flex flex-col gap-6 justify-center items-center py-16  max-lg:p-16"
-          ref={ref}
-        >
+          ref={ref}>
           <motion.div
             ref={animationReference}
             style={{
               scale: scaleProgess,
               opacity: opacityProgess,
               textAlign: "center",
-            }}
-          >
+            }}>
             <p className="text-[--black] mb-6">
               <span className="text-[--orange]">&lt;</span>
               {language === "DE" ? contactData.title.de : contactData.title.en}
@@ -203,14 +173,13 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
           </motion.div>
         </div>
         <div className="flex flex-row justify-center items-start px-32 pt-32 mb-32 max-lg:flex-col max-lg:p-10">
-          <div className="w-1/2  bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all  quote-outer-container text-left max-lg:hidden cursor-progress">
+          <div className="w-1/2  bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all  quote-outer-container text-left max-lg:hidden cursor-progress overflow-x-hidden">
             <Highlight
               code={codeSnippet}
               language="tsx"
-              theme={themes.nightOwl}
-            >
+              theme={themes.nightOwl}>
               {({ className, style, tokens, getLineProps, getTokenProps }) => (
-                <pre className={`${className} text-4xl `} style={style}>
+                <pre className={`${className} text-4xl wrap `} style={style}>
                   {tokens.map((line, i) => (
                     <div {...getLineProps({ line, key: i })}>
                       {line.map((token, key) => (
@@ -225,8 +194,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
           <form
             className="flex flex-col gap-6 justify-center items-center  px-32 w-1/2 max-lg:w-full max-lg:p-10"
             onSubmit={notifySentForm}
-            autoComplete="off"
-          >
+            autoComplete="off">
             {contactData.inputfields.map((input, index) => (
               <input
                 key={index}
@@ -286,30 +254,6 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   : "bg-[--icewhite] dark-shadow"
               }`}
             />
-            <div className="privacy-checkbox flex gap-16">
-              <label
-                className="block w-2 h-2 cursor-pointer"
-                htmlFor="checkbox-label"
-              >
-                <input
-                  type="checkbox"
-                  required
-                  name="checkbox-label"
-                  id="checkbox-label"
-                />
-                <span className="checkbox"></span>
-              </label>
-              <p>
-                {language === "DE"
-                  ? `${contactData.privacyOptIn.checkbox.de}`
-                  : `${contactData.privacyOptIn.checkbox.en}`}
-              </p>
-            </div>
-            <p>
-              {language === "DE"
-                ? `${contactData.privacyOptIn.description.de}`
-                : `${contactData.privacyOptIn.description.en}`}
-            </p>
             <Button
               value={
                 language === "DE"

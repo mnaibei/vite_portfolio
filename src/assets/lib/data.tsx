@@ -45,7 +45,7 @@ export const headerIntroData = {
   subtitle: "Fullstack Developer ",
   description: {
     de: "Hallo, ich bin Mucha Naibei, ein IT-Spezialist/Berater mit über sechs Jahren Erfahrung. Es liegt mir am Herzen, die IT-Sicherheit zu verbessern, modernste Technologien zu implementieren und erstklassige Lösungen bereitzustellen. Über die IT hinaus bin ich ein erfahrener Softwareentwickler, der sich dem kontinuierlichen Lernen widmet und über Branchentrends auf dem Laufenden bleibt. Ich gedeihe in schnelllebigen Umgebungen, löse Herausforderungen und übertreffe die Erwartungen meiner Kunden. Ich bringe Problemlösungskompetenz, effektives Zeitmanagement und Teamarbeit in jedes Projekt ein.",
-    en: "Hello, I am Mucha Naibei, an IT Specialist/Consultant with over six years of experience. I am passionate about enhancing IT security, implementing cutting-edge technologies, and delivering top-notch solutions. Beyond IT, I am a skilled software engineer dedicated to continuous learning and staying updated with industry trends. I thrive in fast-paced environments, solving challenges, and exceeding customer expectations. I bring problem-solving prowess, effective time management, and teamwork to every project.",
+    en: "Hello, I am Mucha Naibei, an IT Specialist/Consultant with over six years of experience. I am passionate about enhancing IT security, implementing cutting-edge technologies, and delivering top-notch solutions. Beyond IT, I am a skilled software developer dedicated to continuous learning and staying updated with industry trends. I thrive in fast-paced environments, solving challenges, and exceeding customer expectations. I bring problem-solving prowess, effective time management, and teamwork to every project.",
   },
   buttons: [
     {
@@ -337,13 +337,13 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
-    en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
-    author: "Andrew Hunt",
+    de: '"Der einzige Weg, großartige Arbeit zu leisten, besteht darin, zu lieben, was man tut."',
+    en: `"The only way to do great work is to love what you do."`,
+    author: "Steve Jobs",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    de: '"Code ist wie Humor. Wenn man es erklären muss, ist es schlecht."',
+    en: `"Code is like humor. When you have to explain it, it's bad."`,
   },
 ] as const;
 
@@ -469,16 +469,6 @@ export const contactData = {
     main: "main-btn",
     second: "secondary-btn",
     icon: "white",
-  },
-  privacyOptIn: {
-    checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
-    },
-    description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
-      en: "By submitting this request, you acknowledge that you have read the Private Policy",
-    },
   },
 } as const;
 

@@ -1,0 +1,4 @@
+.wrap {
+  text-wrap: balance;
+  word-wrap: break-word;
+}

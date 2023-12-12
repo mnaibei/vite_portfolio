@@ -55,6 +55,11 @@ const Contact: React.FC = () => {
         toast.error(toastMessages.failedEmailSent.en);
       }
       setError("An Error occured, try again later");
+    } finally {
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
     }
   };
 
@@ -120,35 +125,37 @@ const Contact: React.FC = () => {
   }, []);
 
   const codeSnippet = `
-import  { useState } from "react";
+  import { useState } from "react";
 
-// 🌈 Spreading Stardust: 
-// Crafting Cosmic Email 🌌
+  // 🤖 Welcome to Robo-Comms! 🚀🔌
+  
+  const [userId, setUserId] = "${name}${
+    lastUpdatedField === "name" ? (cursorBlink ? "👤" : " ") : ""
+  }🔑";
 
-const [sender, setSender] = "${name}${
-    lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
-  }🚀";
-const [recipient, setRecipient] = "${email}${
-    lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
-  }📧";
-const [subject, setSubject] = \n"${subject}${
-    lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
-  }✨";
-const [message, setMessage] = 
-\`Hello, intrepid traveler! 👋\n
-Across the cosmos, a message for you:\n
-"${wordWrap(message, 40, " ")}${
-    lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
+  const [userEmail, setUserEmail] = "${email}${
+    lastUpdatedField === "email" ? (cursorBlink ? "📧" : " ") : ""
+  }📨";
+
+  const [messageType, setMessageType] = "${subject}${
+    lastUpdatedField === "subject" ? (cursorBlink ? "📫" : " ") : ""
+  }🔍";
+
+  const [transmission, setTransmission] = 
+  \`Greetings, human! 🤖👋\n
+  Outgoing transmission details:\n
+  "${wordWrap(message, 40, " ")}${
+    lastUpdatedField === "message" ? (cursorBlink ? "📡" : " ") : ""
   }"\n
-Wishing you stardust dreams,\n
-${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
-\``;
+  Wishing you glitch-free communication,\n
+  ${name}${lastUpdatedField === "name" ? (cursorBlink ? "🤖" : " ") : ""}
+  \``;
 
   return (
     <React.Fragment>
       <section
         //removing min-[1921px]:px-[55rem]
-        className="contact-container w-full mt-16"
+        className="contact-container w-full mt-16 flex flex-col justify-center items-center"
         id="contact">
         <div
           className="title-container flex flex-col gap-6 justify-center items-center py-16  max-lg:p-16"
@@ -174,7 +181,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
           </motion.div>
         </div>
         {/* added border and w-screen  */}
-        <div className="flex flex-row justify-center items-start px-32 pt-32 mb-32 max-lg:flex-col max-lg:p-10 w-screen">
+        <div className="flex flex-row justify-center items-start px-32 pt-32 mb-32 max-lg:flex-col max-lg:p-10 w-4/5">
           <div className="w-1/2  bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all  quote-outer-container text-left max-lg:hidden cursor-progress overflow-x-hidden">
             <Highlight
               code={codeSnippet}

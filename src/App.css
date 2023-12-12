@@ -2,3 +2,17 @@
   text-wrap: balance;
   word-wrap: break-word;
 }
+
+.avatar-img:hover {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

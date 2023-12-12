@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import RadialGradient from "./RadialGradient";
 import { headerIntroData } from "../assets/lib/data";
@@ -6,24 +6,29 @@ import { useSectionInView } from "../assets/lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { useLanguage } from "../context/language-context";
 import { BsMouse } from "react-icons/bs";
+import smile from "../assets/img/smile.png";
 
 const HeaderIntro: React.FC = () => {
   const { language } = useLanguage();
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
+  const [hovered, setHovered] = useState(false);
+
   return (
     <section
       className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
       ref={ref}
-      id="home"
-    >
+      id="home">
       <RadialGradient scale="scale-y-125" opacity="opacity-30" />
 
       <img
-        src={headerIntroData.profilepicture}
+        src={hovered ? smile : headerIntroData.profilepicture}
+        // src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4 transition-transform duration-500 transform hover:scale-110 hover:drop-shadow-xl"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
       />
       <h1>
         {language === "DE"

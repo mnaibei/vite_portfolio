@@ -356,13 +356,13 @@ export const aboutMeData = {
     {
       title: "Die Schaltkreise meines Herzens",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+        "Wenn ich nicht gerade in die digitale Welt eintauche, tauche ich in die faszinierende Welt des Spielens und der Spaziergänge im Freien ein. Für mich sind Spiele immersive Erlebnisse und jeder Spaziergang fühlt sich wie ein erfrischendes Abenteuer an..",
       icon: hardwareicon,
     },
     {
       title: "Auf der Überholspur des Lebens",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+        "Abgesehen vom Programmieren lebe ich von Hochgeschwindigkeitserlebnissen – im wahrsten Sinne des Wortes. Autos befeuern meine Leidenschaft und es gibt nichts Schöneres, als am Steuer leistungsstarker Maschinen unbekannte Straßen zu erkunden",
       icon: caricon,
     },
     {
@@ -376,19 +376,19 @@ export const aboutMeData = {
     {
       title: "The Circuits of My Heart",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+        "When I'm not immersed in the digital realm, I delve into the captivating world of gaming and outdoor strolls. To me, games are immersive experiences, and each walk feels like a refreshing adventure.",
       icon: hardwareicon,
     },
     {
       title: "On the Fast Lane of Life",
       description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
+        "Apart from coding, I thrive on high-speed experiences – quite literally. Cars fuel my passion, and there's nothing like exploring uncharted roads behind the wheel of a vehicle",
       icon: caricon,
     },
     {
-      title: "The Joy of Discovery as a Life Motto",
+      title: "Exploring Language Frontiers",
       description:
-        "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
+        "My path as a web developer is just a slice of my journey. I thrive on the belief that genuine discovery begins when we step into the realm of unfamiliar tongues. Currently, I'm diving into the intricacies of languages, starting with German.",
       icon: travelicon,
     },
   ],

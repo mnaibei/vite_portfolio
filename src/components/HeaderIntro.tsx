@@ -16,14 +16,13 @@ const HeaderIntro: React.FC = () => {
     <section
       className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
       ref={ref}
-      id="home"
-    >
+      id="home">
       <RadialGradient scale="scale-y-125" opacity="opacity-30" />
 
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4 transition-transform duration-500 transform hover:scale-110 hover:drop-shadow-xl"
       />
       <h1>
         {language === "DE"
@@ -38,7 +37,7 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.description.en}
       </p>
 
-      <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
+      <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center md:w-4/5">
         {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}

@@ -30,17 +30,17 @@ const Button: React.FC<ButtonProps> = ({
     onClick,
     type,
     className: `text-white drop-shadow-2xl border-none py-4 px-8 rounded-lg text-[1.6rem] transition-all duration-200 flex flex-row gap-4 justify-center items-center cursor-pointer ${buttoncolor} ${buttonhovercolor} max-lg:text-3xl max-lg:py-8 max-lg:px-16 max-lg:rounded-xl
-    shadow-xl hover:scale-100 hover:-translate-y-2 hover:drop-shadow-xl transition-all duration-200 w-max`,
+    shadow-xl hover:scale-100 hover:-translate-y-2 hover:drop-shadow-xl transition-all duration-200 lg:w-max sm:w-1/3 md:w-full text-center`,
   };
 
   if (elementType === "input") {
     return <input {...commonProps} value={value}></input>;
   } else {
     return (
-      <Link to={link || ""} className="no-underline">
+      <Link to={link || ""} className="no-underline lg:w-max md:w-full">
         <button {...commonProps}>
           {IconSVGComponent ? (
-            <IconSVGComponent className={"w-max h-10"} />
+            <IconSVGComponent className={"lg:w-12 sm:w-1/2 h-10 md:w-10 "} />
           ) : (
             <img
               src={buttoncolor || ""}

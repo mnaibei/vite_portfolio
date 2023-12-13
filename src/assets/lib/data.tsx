@@ -14,7 +14,13 @@ import rendericon from "../../assets/icons/rendericon.svg";
 import ctracker from "../../assets/img/ctracker.webp";
 import todos from "../../assets/img/todos.webp";
 import cinema from "../../assets/img/cinema.webp";
+import landmarks from "../../assets/img/landmarks.webp";
+import weather from "../../assets/img/weatherapp.webp";
+import apt from "../../assets/img/appointment.webp";
+import jwt from "../../assets/icons/jwticon.svg";
 import profilepicture from "../img/me2.webp";
+import swift from "../../assets/icons/swift.svg";
+import xcode from "../../assets/icons/xcode.svg";
 import caricon from "../../assets/icons/car-icon.svg";
 import giticon from "../../assets/icons/git-icon.svg";
 import boostrap from "../../assets/icons/bootstrap.svg";
@@ -74,16 +80,17 @@ export const projectsData = [
   {
     title: "Cryptocurrency App",
     description:
-      "Die mobile Web-App „Cryptocurrency Tracker“ ist ein leistungsstarkes Tool, das mit React und Redux erstellt wurde und asynchrone Thunk-Middleware nutzt, um Echtzeitdaten von einer Kryptowährungs-API abzurufen. Mit dieser App können Benutzer über die neuesten Trends auf dem Kryptowährungsmarkt informiert bleiben. Die App bietet aktuelle Kennzahlen für verschiedene Kryptowährungen, einschließlich ihrer aktuellen Werte und prozentualen Änderungen in den letzten 1 Stunde, 24 Stunden und 7 Tagen. Durch die Verwendung von Redux für die Statusverwaltung gewährleistet die App eine nahtlose Datensynchronisierung und ermöglicht Benutzern die gleichzeitige Verfolgung mehrerer Kryptowährungen. Die benutzerfreundliche Oberfläche bietet ein intuitives Erlebnis und erleichtert die Navigation durch verschiedene Münzen und den Zugriff auf detaillierte Informationen.",
+      "Die auf React und Redux basierende Cryptocurrency Tracker-App ruft Live-Daten mithilfe asynchroner Thunk-Middleware von einer Kryptowährungs-API ab und hält Benutzer über Echtzeitmetriken für verschiedene Münzen auf dem Laufenden. Redux verwaltet die nahtlose Datensynchronisierung und ermöglicht die gleichzeitige Verfolgung mehrerer Kryptowährungen über eine intuitive Benutzeroberfläche, wodurch eine einfache Navigation und umfassende Münzdetails gewährleistet werden.",
     description_EN:
-      "The Cryptocurrency Tracker mobile web app is a powerful tool built with React and Redux, leveraging async thunk middleware to retrieve real-time data from a cryptocurrency API. With this app, users can stay informed about the latest trends in the cryptocurrency market. The app provides up-to-date metrics for various cryptocurrencies, including their current values and percentage changes over the past 1 hour, 24 hours, and 7 days. By utilizing Redux for state management, the app ensures seamless data synchronization and allows users to track multiple cryptocurrencies simultaneously. The user-friendly interface provides an intuitive experience, making it easy to navigate through different coins and access detailed information.",
+      "The React and Redux-powered Cryptocurrency Tracker app fetches live data using async thunk middleware from a cryptocurrency API, keeping users updated on real-time metrics for various coins. Redux manages seamless data synchronization, allowing simultaneous tracking of multiple cryptocurrencies through an intuitive interface.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
+      { name: "Axios", icon: axiosicon },
       { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
-      { name: "Render", icon: rendericon },
+      // { name: "Render", icon: rendericon },
     ],
     image: ctracker,
     deploymenturl: "https://cryptotracker-1qgb.onrender.com",
@@ -100,9 +107,9 @@ export const projectsData = [
   {
     title: "Todo List App",
     description:
-      "Die Todo List Web App ist ein elegantes und effizientes Aufgabenverwaltungstool, das mit React erstellt wurde. Es ermöglicht Benutzern das nahtlose Hinzufügen, Bearbeiten und Entfernen von Aufgaben und bietet eine optimierte Benutzeroberfläche für die Organisation täglicher Aufgabenlisten. Die App nutzt lokalen Speicher, um die Datenpersistenz sicherzustellen und Aufgaben auch dann beizubehalten, wenn die Seite aktualisiert oder der Browser geschlossen wird. Mit ihrem benutzerfreundlichen Design und den wesentlichen Funktionen ermöglicht die Todo List Web App Benutzern, organisiert zu bleiben, Aufgaben zu priorisieren und die Produktivität zu steigern.",
+      "Die elegante Todo List Web App, unterstützt von React, bietet eine nahtlose Aufgabenverwaltung mit Funktionen zum Hinzufügen, Bearbeiten und Entfernen von Aufgaben und erleichtert so die Organisation täglicher To-Do-Listen. Mithilfe des lokalen Speichers bleibt die Datenpersistenz bei Seitenaktualisierungen und Browserschließungen erhalten und die Benutzerproduktivität wird durch das benutzerfreundliche Design und die wesentlichen Funktionen gesteigert.",
     description_EN:
-      "The Todo List Web App is a sleek and efficient task management tool built with React. It enables users to seamlessly add, edit, and remove tasks, providing a streamlined interface for organizing daily to-do lists. The app leverages local storage to ensure data persistence, preserving tasks even when the page is refreshed or the browser is closed. With its user-friendly design and essential features, the Todo List Web App empowers users to stay organized, prioritize tasks, and enhance productivity.",
+      "The sleek Todo List Web App, powered by React, offers seamless task management with features to add, edit, and remove tasks, facilitating organized daily to-do lists. Utilizing local storage, it maintains data persistence across page refreshes and browser closures, enhancing user productivity through its user-friendly design and essential functionalities.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -132,6 +139,7 @@ export const projectsData = [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
+      { name: "REST Api", icon: apiicon },
       { name: "Axios", icon: axiosicon },
       { name: "Node.js", icon: nodejsicon },
     ],
@@ -145,6 +153,81 @@ export const projectsData = [
       second: "secondary-btn",
       icon: "white",
       projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "Landmarks App",
+    description:
+      "Die Landmarks-App präsentiert verschiedene Wahrzeichen in Kenia. Es verfügt über eine Seite „Empfohlen“, eine Liste von Sehenswürdigkeiten und eine Detailseite mit zusätzlichen Informationen zu den einzelnen Sehenswürdigkeiten. Die App verfügt außerdem über eine Favoritenfunktion, mit der Benutzer ihre bevorzugten Sehenswürdigkeiten markieren und entsprechende Filter anwenden können.",
+    description_EN:
+      "The Landmarks App showcases various landmarks in Kenya. It features a Featured page, a list of landmarks, and a Details page providing additional information about each landmark. The app also includes a Favorites function that allows users to mark their preferred landmarks and apply filters accordingly.",
+    technologies: [
+      { name: "Swift", icon: swift },
+      { name: "Xcode", icon: xcode },
+    ],
+    image: landmarks,
+    // deploymenturl: "https://cryptotracker-1qgb.onrender.com",
+    githuburl: "https://github.com/mnaibei/Landmarks",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#70B9BE",
+    },
+  },
+  {
+    title: "Weather App",
+    description:
+      "Die Wetter-App ist ein umfassendes Tool, das mithilfe der Swift- und OpenWeather-API entwickelt wurde, um die Wetterbedingungen an jedem Ort in Echtzeit zu überprüfen. Mit einer benutzerfreundlichen Oberfläche liefert es genaue und aktuelle Wetterdaten, einschließlich Temperatur, Luftfeuchtigkeit, Windgeschwindigkeit und mehr. Die App sorgt für Wetteraktualisierungen für die aktuelle Uhrzeit und bis zu sieben Tage im Voraus",
+    description_EN:
+      "The Weather App is a comprehensive tool built using Swift and OpenWeather API for checking real-time weather conditions of any location. With a user-friendly interface, it provides accurate and up-to-date weather data including temperature, humidity, wind speed, and more. The app ensures weather updates for the current time and up to seven days in advance.",
+    technologies: [
+      { name: "Swift", icon: swift },
+      { name: "Xcode", icon: xcode },
+    ],
+    image: weather,
+    // deploymenturl: "https://cryptotracker-1qgb.onrender.com",
+    githuburl: "https://github.com/mnaibei/WeatherApp",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#70B9BE",
+    },
+  },
+  {
+    title: "Car Rental Full-Stack App",
+    description:
+      "Durch die Zusammenarbeit unseres Teams entstand eine robuste Autovermietungsanwendung, die React und Redux im Frontend und Ruby on Rails im Backend integriert. Diese App verfügt über vollständige Benutzerauthentifizierungsfunktionen und bietet Benutzern ein nahtloses Erlebnis, indem sie mühelos Autos zum Bestand hinzufügen oder ein Fahrzeug mieten.",
+    description_EN:
+      "The collaborative effort of our team birthed a robust car rental application integrating React and Redux on the frontend and Ruby on Rails on the backend. Boasting full user authentication capabilities, this app offers a seamless experience for users to effortlessly add cars to the inventory or rent a vehicle. ",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "REST Api", icon: apiicon },
+      { name: "Axios", icon: axiosicon },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Ruby", icon: ruby },
+      { name: "Rails", icon: ror },
+      { name: "JWT", icon: jwt },
+      { name: "Postgres", icon: postgres },
+    ],
+    image: apt,
+    // deploymenturl: "https://cryptotracker-1qgb.onrender.com",
+    githuburl: "https://github.com/mnaibei/appointment-app-backend",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#70B9BE",
     },
   },
 ] as const;

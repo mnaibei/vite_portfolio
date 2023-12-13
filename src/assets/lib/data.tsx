@@ -362,13 +362,13 @@ export const aboutMeData = {
     {
       title: "Auf der Überholspur des Lebens",
       description:
-        "Abgesehen vom Programmieren lebe ich von Hochgeschwindigkeitserlebnissen – im wahrsten Sinne des Wortes. Autos befeuern meine Leidenschaft und es gibt nichts Schöneres, als am Steuer leistungsstarker Maschinen unbekannte Straßen zu erkunden",
+        "Abgesehen vom Programmieren lebe ich von Hochgeschwindigkeitserlebnissen – im wahrsten Sinne des Wortes. Autos beflügeln meine Leidenschaft und es gibt nichts Schöneres, als unbekannte Straßen am Steuer eines Fahrzeugs zu erkunden",
       icon: caricon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "Sprachgrenzen erkunden",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+        "Mein Weg als Webentwickler ist nur ein Teil meiner Reise. Ich lebe von der Überzeugung, dass echte Entdeckungen dann beginnen, wenn wir das Reich unbekannter Sprachen betreten. Derzeit beschäftige ich mich mit den Feinheiten der Sprachen, beginnend mit Deutsch.",
       icon: travelicon,
     },
   ],

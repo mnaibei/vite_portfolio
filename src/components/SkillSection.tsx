@@ -46,15 +46,13 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
 
   return (
     <article
-      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
+      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 max-[768px]:grid-cols-auto  ${
         theme === "dark"
           ? "bg-[--blackblue] dark-mode-shadow"
           : "bg-[--icewhite] dark-shadow"
-      }`}
-    >
+      }`}>
       <div
-        className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
-      >
+        className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}>
         <p className="font-black text-4xl">
           <span className="text-[--orange]">&lt;</span>
           {skillsData[0].skillsTitle}
@@ -64,7 +62,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
       {skillsData[0].skills.map((skill, index) => (
         <div
           key={index}
-          className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem]  text-center max-lg:items-center    ${
+          className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem] text-center max-lg:items-center  ${
             theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
           }`}
           data-tooltip-id="my-tooltip"
@@ -87,14 +85,13 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
               "--box-shadow-color",
               "inherit"
             );
-          }}
-        >
+          }}>
           <img
             src={getSkillIconSrc(theme, skill)}
             alt={`${skill.icon}-icon`}
-            className="h-[10rem]"
+            className="h-[10rem] max-[768px]:h-[4rem] max-[768px]:w-full max-[768px]:mx-auto"
           />
-          <h3 className="max-lg:text-[2rem] min-[1024px]:hidden">
+          <h3 className="max-lg:text-[2rem] min-[1024px]:hidden max-[768px]:text-[0.9rem]">
             {skill.title}
           </h3>
         </div>

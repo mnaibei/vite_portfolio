@@ -37,7 +37,7 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.description.en}
       </p>
 
-      <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
+      <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center md:w-4/5">
         {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}

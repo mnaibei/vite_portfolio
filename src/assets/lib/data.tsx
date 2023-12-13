@@ -208,7 +208,7 @@ export const projectsData = [
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
+      // { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
       { name: "REST Api", icon: apiicon },
       { name: "Axios", icon: axiosicon },

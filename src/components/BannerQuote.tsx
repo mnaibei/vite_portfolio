@@ -33,8 +33,7 @@ const BannerQuote: React.FC<BannerProps> = ({
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-          }}
-        >
+          }}>
           <div className="quote-container rotate-3 flex items-center flex-col justify-center p-56 max-lg:p-20 ">
             <h2 className="text-[--white] text-center text-8xl mb-20 mt-20 max-lg:text-[3rem] max-lg:mb-10 max-lg:leading-tight">
               {quoteTranslation}

@@ -22,8 +22,9 @@ const HeaderIntro: React.FC = () => {
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
+        loading="lazy"
         //added h-fit to fix lighthouse error and added loading-lazy
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4 transition-transform duration-500 transform hover:scale-110 hover:drop-shadow-xl h-fit loading-lazy"
+        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4 transition-transform duration-500 transform hover:scale-110 hover:drop-shadow-xl h-fit"
       />
       <h1>
         {language === "DE"

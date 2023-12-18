@@ -63,7 +63,8 @@ const AboutMe: React.FC = () => {
             <img
               src={me}
               alt={me}
-              className="rounded-full h-fit w-fit"
+              //remove h-fit here
+              className="rounded-full w-fit"
               loading="lazy"
             />
           </article>

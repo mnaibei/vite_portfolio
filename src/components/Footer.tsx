@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
           </Link>
         ))}
       </div>
-      <div></div>
+      <div className="text-white">&copy; {new Date().getFullYear()} </div>
     </footer>
   );
 };

@@ -145,7 +145,8 @@ const ProjectSlider: React.FC = () => {
                     <img
                       src={project.image}
                       alt={`${project.title}-project-mockup`}
-                      className={`w-full h-auto transition-all duration-[6000ms] transform opacity-100 hover:translate-y-[-50%] 
+                      //added loading="lazy" to fix lighthouse performance score and h-fit
+                      className={`w-full h-min transition-all duration-[6000ms] transform opacity-100 hover:translate-y-[-50%] loading="lazy" 
                       `}
                     />
                   </div>
